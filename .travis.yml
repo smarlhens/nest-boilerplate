@@ -1,0 +1,24 @@
+dist: bionic
+language: node_js
+node_js:
+  - '10'
+  - '12'
+  - '13'
+
+os:
+  - linux
+
+cache:
+  directories:
+    - ./node_modules
+
+install:
+  - npm install --no-progress
+
+script:
+  - npm run lint
+  - npm run prettier:check
+  - npm run test
+  - npm run test:e2e
+  - npm run build
+

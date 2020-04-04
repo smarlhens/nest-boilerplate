@@ -1,0 +1,93 @@
+version: 2
+
+jobs:
+  checkout:
+    working_directory: ~/nest7-boilerplate
+    docker:
+      - image: circleci/node:12-browsers
+    steps:
+      - checkout
+      - save_cache:
+          key: v0-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+          paths:
+            - ~/nest7-boilerplate
+  dependencies:
+    working_directory: ~/nest7-boilerplate
+    docker:
+      - image: circleci/node:12-browsers
+    steps:
+      - restore_cache:
+          key: v0-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: v0-node-{{ .Branch }}-{{ checksum "package.json" }}
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          key: v0-node-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - ~/nest7-boilerplate/node_modules
+  lint:
+    working_directory: ~/nest7-boilerplate
+    docker:
+      - image: circleci/node:12-browsers
+    steps:
+      - restore_cache:
+          key: v0-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: v0-node-{{ .Branch }}-{{ checksum "package.json" }}
+      - run:
+          name: ESLint
+          command: npm run lint
+      - run:
+          name: Prettier
+          command: npm run prettier:check
+  test:
+    working_directory: ~/nest7-boilerplate
+    docker:
+      - image: circleci/node:12-browsers
+    steps:
+      - restore_cache:
+          key: v0-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: v0-node-{{ .Branch }}-{{ checksum "package.json" }}
+      - run:
+          name: Test
+          command: npm run test
+      - run:
+          name: E2E
+          command: npm run test:e2e
+  build:
+    working_directory: ~/nest7-boilerplate
+    docker:
+      - image: circleci/node:12-browsers
+    steps:
+      - restore_cache:
+          key: v0-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: v0-node-{{ .Branch }}-{{ checksum "package.json" }}
+      - run:
+          name: Build
+          command: npm run build
+      - save_cache:
+          key: v0-build-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+          paths:
+            - ~/nest7-boilerplate/dist/nest7-boilerplate
+
+workflows:
+  version: 2
+  ci:
+    jobs:
+      - checkout
+      - dependencies:
+          requires:
+            - checkout
+      - lint:
+          requires:
+            - dependencies
+      - test:
+          requires:
+            - lint
+      - build:
+          requires:
+            - test

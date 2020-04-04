@@ -1,0 +1,29 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['13.x', '12.x', '10.x']
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install dependencies
+        run: npm install
+      - name: ESLint
+        run: npm run lint
+      - name: Prettier
+        run: npm run prettier:check
+      - name: Test
+        run: npm run test
+      - name: E2E
+        run: npm run test:e2e
+      - name: Build
+        run: npm run build
