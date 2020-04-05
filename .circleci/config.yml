@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 
 jobs:
   checkout:
@@ -46,6 +46,13 @@ jobs:
     working_directory: ~/nest7-boilerplate
     docker:
       - image: circleci/node:12-browsers
+      - image: circleci/postgres:12
+        environment:
+          POSTGRES_HOST: localhost
+          POSTGRES_PORT: 5432
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
     steps:
       - restore_cache:
           key: v0-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
@@ -54,6 +61,12 @@ jobs:
       - run:
           name: Test
           command: npm run test
+      - run:
+          name: Copy .env
+          command: cp .env.dist .env
+      - run:
+          name: Wait for Postgres to start
+          command: dockerize -wait tcp://localhost:5432 -timeout 1m
       - run:
           name: E2E
           command: npm run test:e2e
