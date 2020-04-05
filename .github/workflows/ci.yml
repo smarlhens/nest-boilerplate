@@ -23,6 +23,12 @@ jobs:
         run: npm run prettier:check
       - name: Test
         run: npm run test
+      - name: Copy .env
+        run: cp .env.dist .env
+      - name: Build the docker-compose stack
+        run: docker-compose up -d --build postgres
+      - name: Check running containers
+        run: docker ps -a
       - name: E2E
         run: npm run test:e2e
       - name: Build
