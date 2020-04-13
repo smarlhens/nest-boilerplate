@@ -12,7 +12,7 @@ services:
     volumes:
       - postgres:/data/postgres
     ports:
-      - "${POSTGRES_PORT:-5432}:5432"
+      - '${POSTGRES_PORT:-5432}:5432'
     networks:
       - postgres
     restart: unless-stopped
@@ -26,7 +26,7 @@ services:
     volumes:
       - pgadmin:/root/.pgadmin
     ports:
-      - "${PGADMIN_PORT:-5050}:80"
+      - '${PGADMIN_PORT:-5050}:80'
     networks:
       - postgres
     restart: unless-stopped

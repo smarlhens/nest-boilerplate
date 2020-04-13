@@ -29,6 +29,7 @@
   - [CircleCI](#circleci)
   - [Commitizen](#commitizen)
   - [Commitlint](#commitlint)
+  - [Docker & Docker-Compose](#docker-docker-compose)
   - [ESLint](#eslint)
   - [GitHub Actions](#github-actions)
   - [Husky](#husky)
@@ -40,6 +41,7 @@
 - [Build](#build)
 - [Test](#test)
 - [Further help](#further-help)
+- [Useful Docker commands](#useful-docker-commands)
 
 ---
 
@@ -53,7 +55,10 @@ What things you need to install the software and how to install them :
 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/)
+- [Docker](https://docs.docker.com/docker-for-windows/install/) or [Docker Toolbox](https://github.com/docker/toolbox/releases)
 - [Nest CLI](https://docs.nestjs.com/cli/overview)
+
+---
 
 ### Installation
 
@@ -73,6 +78,26 @@ What things you need to install the software and how to install them :
 
    ```bash
    git checkout <branch>
+   ```
+
+1. Install NPM dependencies
+
+   ```bash
+   npm i
+   ```
+
+1. Copy `.env.dist` to `.env`
+
+   ```bash
+   cp .env.dist .env
+   ```
+
+1. Replace the values of the variables with your own
+
+1. Create Docker images and launch them
+
+   ```bash
+   docker-compose up -d --build
    ```
 
 ---
@@ -114,6 +139,19 @@ type(scope?): subject  #scope is optional
 ```
 
 Are you a good `commitizen` ?
+
+---
+
+### Docker & Docker-Compose
+
+**Compose file**: [`docker-compose.yml`](https://github.com/smarlhens/nest7-boilerplate/blob/master/docker-compose.yml).
+
+Containers :
+
+- PostGreSQL 12
+- pgAdmin 4
+
+Compose file uses `.env`.
 
 ---
 
@@ -231,5 +269,41 @@ npm run test:cov
 ## Further help
 
 To get more help on the Nest CLI use `nest --help` or go check out the [Nest CLI README](https://github.com/nestjs/nest-cli/blob/master/README.md).
+
+---
+
+## Useful Docker commands
+
+1. If you want to check that all containers are up :
+
+   ```bash
+   docker-compose ps
+   ```
+
+1. Other Docker commands :
+
+   ```bash
+   # Start Docker
+   docker-compose start
+
+   # Restart Docker
+   docker-compose restart
+
+   # Stop Docker
+   docker-compose stop
+
+   # Delete all containers
+   docker rm $(docker ps -aq)
+
+   # Delete all images
+   docker rmi $(docker images -q)
+   ```
+
+1. How to get a Docker container's IP address from the host ?
+
+   ```bash
+   docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container>
+   docker inspect $(docker ps -f name=<service> -q) | grep IPAddress
+   ```
 
 ---
