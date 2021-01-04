@@ -1,15 +1,7 @@
 {
   "printWidth": 120,
-  "tabWidth": 2,
-  "useTabs": false,
-  "semi": true,
   "singleQuote": true,
-  "quoteProps": "as-needed",
-  "trailingComma": "all",
-  "bracketSpacing": true,
-  "arrowParens": "always",
-  "htmlWhitespaceSensitivity": "css",
-  "proseWrap": "preserve",
+  "trailingComma": "es5",
   "endOfLine": "lf",
   "overrides": [
     {
