@@ -1,5 +1,19 @@
 {
-  "extends": [
-    "config:base"
+  "extends": ["config:base", "schedule:daily", ":automergeMinor"],
+  "ignoreDeps": ["husky"],
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^eslint", "lint-staged", "prettier", "^@typescript-eslint"],
+      "labels": ["linting"]
+    },
+    {
+      "matchPackagePatterns": ["husky", "commitizen", "^@commitlint", "cz-conventional-changelog"],
+      "labels": ["hooks"]
+    },
+    {
+      "matchDepTypes": ["optionalDependencies"],
+      "addLabels": ["optional"]
+    }
   ]
 }
