@@ -1,6 +1,5 @@
 {
   "extends": ["config:base", "schedule:daily", ":automergeMinor"],
-  "ignoreDeps": ["husky"],
   "labels": ["dependencies"],
   "packageRules": [
     {
@@ -14,6 +13,10 @@
     {
       "matchDepTypes": ["optionalDependencies"],
       "addLabels": ["optional"]
+    },
+    {
+      "matchPackageNames": ["husky"],
+      "allowedVersions": "<5"
     }
   ]
 }
