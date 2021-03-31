@@ -13,10 +13,6 @@
     {
       "matchDepTypes": ["optionalDependencies"],
       "addLabels": ["optional"]
-    },
-    {
-      "matchPackageNames": ["husky"],
-      "allowedVersions": "<5"
     }
   ]
 }
