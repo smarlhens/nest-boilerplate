@@ -2,7 +2,7 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
 
-# Nest 7 - Boilerplate
+# Nest 8 - Boilerplate
 
 [![GitHub CI](https://github.com/smarlhens/nest7-boilerplate/workflows/CI/badge.svg)](https://github.com/smarlhens/nest7-boilerplate/actions?query=workflow%3ACI)
 [![CircleCI](https://circleci.com/gh/smarlhens/nest7-boilerplate.svg?style=svg)](https://circleci.com/gh/smarlhens/nest7-boilerplate)
@@ -18,7 +18,6 @@
 [![GitHub license](https://img.shields.io/github/license/smarlhens/nest7-boilerplate)](https://github.com/smarlhens/nest7-boilerplate)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/smarlhens/nest7-boilerplate)
 ![GitHub repo size](https://img.shields.io/github/repo-size/smarlhens/nest7-boilerplate)
-[![HitCount](http://hits.dwyl.com/smarlhens/nest7-boilerplate.svg)](http://hits.dwyl.com/smarlhens/nest7-boilerplate)
 
 ## Table of contents
 

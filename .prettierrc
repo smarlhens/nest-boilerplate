@@ -2,7 +2,8 @@
   "printWidth": 120,
   "singleQuote": true,
   "trailingComma": "es5",
-  "endOfLine": "lf",
+  "arrowParens": "avoid",
+  "endOfLine": "auto",
   "overrides": [
     {
       "files": "*.json",

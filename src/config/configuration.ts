@@ -2,7 +2,7 @@ import { resolve } from 'path';
 
 const SOURCE_PATH = resolve(__dirname, '..', '.');
 
-export default () => ({
+export default (): Record<string, unknown> => ({
   port: parseInt(process.env.PORT, 10) || 3000,
   database: {
     host: process.env.POSTGRES_HOST || 'localhost',
