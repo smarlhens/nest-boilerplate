@@ -1,9 +1,9 @@
-dist: bionic
+dist: focal
 language: node_js
 node_js:
-  - '10'
   - '12'
-  - '13'
+  - '14'
+  - '16'
 
 os:
   - linux
@@ -16,7 +16,7 @@ services:
   - docker
 
 install:
-  - npm install --no-progress
+  - npm ci --no-progress
 
 script:
   - npm run lint
