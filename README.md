@@ -4,20 +4,20 @@
 
 # Nest 8 - Boilerplate
 
-[![GitHub CI](https://github.com/smarlhens/nest7-boilerplate/workflows/CI/badge.svg)](https://github.com/smarlhens/nest7-boilerplate/actions?query=workflow%3ACI)
-[![CircleCI](https://circleci.com/gh/smarlhens/nest7-boilerplate.svg?style=svg)](https://circleci.com/gh/smarlhens/nest7-boilerplate)
-[![Build Status](https://travis-ci.com/smarlhens/nest7-boilerplate.svg?branch=master)](https://travis-ci.com/smarlhens/nest7-boilerplate)
+[![GitHub CI](https://github.com/smarlhens/nest-boilerplate/workflows/CI/badge.svg)](https://github.com/smarlhens/nest-boilerplate/actions?query=workflow%3ACI)
+[![CircleCI](https://circleci.com/gh/smarlhens/nest-boilerplate.svg?style=svg)](https://circleci.com/gh/smarlhens/nest-boilerplate)
+[![Build Status](https://travis-ci.com/smarlhens/nest-boilerplate.svg?branch=master)](https://travis-ci.com/smarlhens/nest-boilerplate)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![GitHub issues](https://img.shields.io/github/issues/smarlhens/nest7-boilerplate)](https://github.com/smarlhens/nest7-boilerplate/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/smarlhens/nest7-boilerplate)](https://github.com/smarlhens/nest7-boilerplate/pulls)
-[![GitHub stars](https://img.shields.io/github/stars/smarlhens/nest7-boilerplate)](https://github.com/smarlhens/nest7-boilerplate/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/smarlhens/nest7-boilerplate)](https://github.com/smarlhens/nest7-boilerplate/network)
-[![GitHub contributors](https://img.shields.io/github/contributors/smarlhens/nest7-boilerplate)](https://github.com/smarlhens/nest7-boilerplate/graphs/contributors)
-[![GitHub license](https://img.shields.io/github/license/smarlhens/nest7-boilerplate)](https://github.com/smarlhens/nest7-boilerplate)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/smarlhens/nest7-boilerplate)
-![GitHub repo size](https://img.shields.io/github/repo-size/smarlhens/nest7-boilerplate)
+[![GitHub issues](https://img.shields.io/github/issues/smarlhens/nest-boilerplate)](https://github.com/smarlhens/nest-boilerplate/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/smarlhens/nest-boilerplate)](https://github.com/smarlhens/nest-boilerplate/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/smarlhens/nest-boilerplate)](https://github.com/smarlhens/nest-boilerplate/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/smarlhens/nest-boilerplate)](https://github.com/smarlhens/nest-boilerplate/network)
+[![GitHub contributors](https://img.shields.io/github/contributors/smarlhens/nest-boilerplate)](https://github.com/smarlhens/nest-boilerplate/graphs/contributors)
+[![GitHub license](https://img.shields.io/github/license/smarlhens/nest-boilerplate)](https://github.com/smarlhens/nest-boilerplate)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/smarlhens/nest-boilerplate)
+![GitHub repo size](https://img.shields.io/github/repo-size/smarlhens/nest-boilerplate)
 
 ## Table of contents
 
