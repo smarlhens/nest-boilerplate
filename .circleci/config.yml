@@ -2,7 +2,7 @@ version: 2.1
 
 jobs:
   checkout:
-    working_directory: ~/nest7-boilerplate
+    working_directory: ~/nest-boilerplate
     docker:
       - image: circleci/node:12-browsers
     steps:
@@ -10,9 +10,9 @@ jobs:
       - save_cache:
           key: v0-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
-            - ~/nest7-boilerplate
+            - ~/nest-boilerplate
   dependencies:
-    working_directory: ~/nest7-boilerplate
+    working_directory: ~/nest-boilerplate
     docker:
       - image: circleci/node:12-browsers
     steps:
@@ -26,9 +26,9 @@ jobs:
       - save_cache:
           key: v0-node-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
-            - ~/nest7-boilerplate/node_modules
+            - ~/nest-boilerplate/node_modules
   lint:
-    working_directory: ~/nest7-boilerplate
+    working_directory: ~/nest-boilerplate
     docker:
       - image: circleci/node:12-browsers
     steps:
@@ -43,7 +43,7 @@ jobs:
           name: Prettier
           command: npm run prettier:check
   test:
-    working_directory: ~/nest7-boilerplate
+    working_directory: ~/nest-boilerplate
     docker:
       - image: circleci/node:12-browsers
       - image: circleci/postgres:12
@@ -71,7 +71,7 @@ jobs:
           name: E2E
           command: npm run test:e2e
   build:
-    working_directory: ~/nest7-boilerplate
+    working_directory: ~/nest-boilerplate
     docker:
       - image: circleci/node:12-browsers
     steps:
@@ -85,7 +85,7 @@ jobs:
       - save_cache:
           key: v0-build-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
-            - ~/nest7-boilerplate/dist/nest7-boilerplate
+            - ~/nest-boilerplate/dist/nest-boilerplate
 
 workflows:
   version: 2
