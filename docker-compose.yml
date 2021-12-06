@@ -3,7 +3,7 @@ version: '3.5'
 services:
   postgres:
     container_name: postgres_container
-    image: postgres:12
+    image: postgres:14.1-alpine3.15
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
@@ -19,7 +19,7 @@ services:
 
   pgadmin:
     container_name: pgadmin_container
-    image: dpage/pgadmin4
+    image: dpage/pgadmin4:6.2
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
