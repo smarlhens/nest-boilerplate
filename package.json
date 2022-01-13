@@ -26,10 +26,10 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@nestjs/common": "8.2.4",
+    "@nestjs/common": "8.2.5",
     "@nestjs/config": "1.1.6",
-    "@nestjs/core": "8.2.4",
-    "@nestjs/platform-express": "8.2.4",
+    "@nestjs/core": "8.2.5",
+    "@nestjs/platform-express": "8.2.5",
     "@nestjs/swagger": "5.1.5",
     "@nestjs/typeorm": "8.0.2",
     "joi": "17.5.0",
@@ -43,9 +43,9 @@
   "devDependencies": {
     "@commitlint/cli": "16.0.2",
     "@commitlint/config-conventional": "16.0.0",
-    "@nestjs/cli": "8.1.8",
+    "@nestjs/cli": "8.2.0",
     "@nestjs/schematics": "8.0.5",
-    "@nestjs/testing": "8.2.4",
+    "@nestjs/testing": "8.2.5",
     "@types/express": "4.17.13",
     "@types/jest": "27.4.0",
     "@types/node": "17.0.8",
