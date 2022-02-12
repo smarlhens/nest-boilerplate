@@ -129,7 +129,7 @@ Use `git cz` instead of `git commit` to use commitizen.
 
 [commitlint](https://github.com/conventional-changelog/commitlint) checks if your commit messages meet the [conventional commit format](https://conventionalcommits.org).
 
-**Configuration file**: [`.commitlintrc`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.commitlintrc).
+**Configuration file**: [`.commitlintrc.json`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.commitlintrc.json).
 
 In general the pattern mostly looks like this:
 
@@ -141,14 +141,14 @@ Are you a good `commitizen` ?
 
 ---
 
-### Docker & Docker-Compose
+### Docker & Docker-Compose
 
 **Compose file**: [`docker-compose.yml`](https://github.com/smarlhens/nest7-boilerplate/blob/master/docker-compose.yml).
 
 Containers :
 
-- PostGreSQL 12
-- pgAdmin 4
+- PostGreSQL 14
+- pgAdmin 6
 
 Compose file uses `.env`.
 
@@ -176,7 +176,7 @@ For more configuration options and details, see the [configuration docs](https:/
 
 [Husky](https://github.com/typicode/husky) is a package that helps you create Git hooks easily.
 
-**Configuration file**: [`.huskyrc`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.huskyrc).
+**Configuration folder**: [`.husky`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.husky/).
 
 ---
 
@@ -184,7 +184,7 @@ For more configuration options and details, see the [configuration docs](https:/
 
 [Lint-staged](https://github.com/okonet/lint-staged) is a Node.js script that allows you to run arbitrary scripts against currently staged files.
 
-**Configuration file**: [`.lintstagedrc`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.lintstagedrc).
+**Configuration file**: [`.lintstagedrc.json`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.lintstagedrc.json).
 
 ---
 
