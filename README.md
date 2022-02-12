@@ -1,5 +1,17 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+  <a href="https://nestjs.com/" target="blank"><img src="https://github.com/nestjs/docs.nestjs.com/blob/master/src/assets/logo-small.svg" height="100" alt="Nest Logo" /></a>
+  <a href="https://typeorm.io/" target="blank"><img src="https://avatars.githubusercontent.com/u/20165699" height="100" alt="TypeORM Logo" /></a>
+  <a href="https://www.postgresql.org/" target="blank"><img src="https://www.postgresql.org/media/img/about/press/elephant.png" height="100" alt="PostgreSQL Logo" /></a>
+  <a href="https://jestjs.io/" target="blank"><img src="https://github.com/facebook/jest/blob/main/website/static/img/jest.png" height="100" alt="Jest Logo" /></a>
+  <a href="https://prettier.io/" target="blank"><img src="https://github.com/prettier/prettier/blob/main/website/static/icon.png" height="100" alt="Prettier Logo" /></a>
+  <a href="https://eslint.org/" target="blank"><img src="https://github.com/eslint/website/blob/master/assets/img/logo.svg" height="100" alt="ESLint Logo" /></a>
+</p>
+
+<p align="center">
+  <a href="https://docs.docker.com/" target="blank"><img src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png" height="60" alt="GitHub Actions Logo" /></a>
+  <a href="https://github.com/features/actions" target="blank"><img src="https://avatars.githubusercontent.com/u/44036562" height="60" alt="GitHub Actions Logo" /></a>
+  <a href="https://circleci.com/" target="blank"><img src="https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg" height="60" alt="CircleCI Logo" /></a>
+  <a href="https://www.travis-ci.com/" target="blank"><img src="https://www.vectorlogo.zone/logos/travis-ci/travis-ci-icon.svg" height="60" alt="Travis CI Logo" /></a>
 </p>
 
 # Nest 8 - Boilerplate
@@ -28,7 +40,7 @@
   - [CircleCI](#circleci)
   - [Commitizen](#commitizen)
   - [Commitlint](#commitlint)
-  - [Docker & Docker-Compose](#docker-docker-compose)
+  - [Docker Compose](#docker-compose)
   - [ESLint](#eslint)
   - [GitHub Actions](#github-actions)
   - [Husky](#husky)
@@ -141,13 +153,13 @@ Are you a good `commitizen` ?
 
 ---
 
-### Docker & Docker-Compose
+### Docker Compose
 
 **Compose file**: [`docker-compose.yml`](https://github.com/smarlhens/nest7-boilerplate/blob/master/docker-compose.yml).
 
 Containers :
 
-- PostGreSQL 14
+- PostgreSQL 14
 - pgAdmin 6
 
 Compose file uses `.env`.
