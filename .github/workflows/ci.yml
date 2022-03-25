@@ -19,7 +19,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v3
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ matrix.node }}-${{ hashFiles('**/package-lock.json') }}
