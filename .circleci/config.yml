@@ -4,7 +4,7 @@ jobs:
   checkout:
     working_directory: ~/nest-boilerplate
     docker:
-      - image: circleci/node:14.17-browsers
+      - image: cimg/node:14.17-browsers
     steps:
       - checkout
       - save_cache:
@@ -14,7 +14,7 @@ jobs:
   dependencies:
     working_directory: ~/nest-boilerplate
     docker:
-      - image: circleci/node:14.17-browsers
+      - image: cimg/node:14.17-browsers
     steps:
       - restore_cache:
           key: v0-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
@@ -30,7 +30,7 @@ jobs:
   lint:
     working_directory: ~/nest-boilerplate
     docker:
-      - image: circleci/node:14.17-browsers
+      - image: cimg/node:14.17-browsers
     steps:
       - restore_cache:
           key: v0-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
@@ -45,8 +45,8 @@ jobs:
   test:
     working_directory: ~/nest-boilerplate
     docker:
-      - image: circleci/node:14.17-browsers
-      - image: circleci/postgres:14
+      - image: cimg/node:14.17-browsers
+      - image: cimg/postgres:14.2
         environment:
           POSTGRES_HOST: localhost
           POSTGRES_PORT: 5432
@@ -73,7 +73,7 @@ jobs:
   build:
     working_directory: ~/nest-boilerplate
     docker:
-      - image: circleci/node:14.17-browsers
+      - image: cimg/node:14.17-browsers
     steps:
       - restore_cache:
           key: v0-repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
