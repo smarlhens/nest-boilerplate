@@ -46,7 +46,7 @@ jobs:
     working_directory: ~/nest-boilerplate
     docker:
       - image: circleci/node:14.17-browsers
-      - image: circleci/postgres:13
+      - image: circleci/postgres:14
         environment:
           POSTGRES_HOST: localhost
           POSTGRES_PORT: 5432
