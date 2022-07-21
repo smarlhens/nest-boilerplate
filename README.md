@@ -204,7 +204,7 @@ For more configuration options and details, see the [configuration docs](https:/
 
 [Prettier](https://prettier.io/) is an opinionated code formatter.
 
-**Configuration file**: [`.prettierrc`](./.prettierrc).  
+**Configuration file**: [`.prettierrc.json`](./.prettierrc.json).  
 **Ignore file**: [`.prettierignore`](./.prettierignore).
 
 For more configuration options and details, see the [configuration docs](https://prettier.io/docs/en/configuration.html).
