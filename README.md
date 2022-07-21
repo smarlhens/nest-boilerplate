@@ -14,7 +14,7 @@
   <a href="https://www.travis-ci.com/" target="blank"><img src="https://www.vectorlogo.zone/logos/travis-ci/travis-ci-icon.svg" height="60" alt="Travis CI logo" /></a>
 </p>
 
-# Nest 8 - Boilerplate
+# Nest - Boilerplate
 
 [![GitHub CI](https://github.com/smarlhens/nest-boilerplate/workflows/CI/badge.svg)](https://github.com/smarlhens/nest-boilerplate/actions?query=workflow%3ACI)
 [![CircleCI](https://circleci.com/gh/smarlhens/nest-boilerplate.svg?style=svg)](https://circleci.com/gh/smarlhens/nest-boilerplate)
@@ -76,13 +76,13 @@ What things you need to install the software and how to install them :
 1. Clone the git repository
 
    ```bash
-   git clone https://github.com/smarlhens/nest7-boilerplate.git
+   git clone https://github.com/smarlhens/nest-boilerplate.git
    ```
 
 1. Go into the project directory
 
    ```bash
-   cd nest7-boilerplate/
+   cd nest-boilerplate/
    ```
 
 1. Checkout working branch
@@ -119,7 +119,7 @@ What things you need to install the software and how to install them :
 
 [CircleCI](https://circleci.com/) automates your software builds, tests, and deployments.
 
-**CircleCI pipeline file**: [`.circleci/config.yml`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.circleci/config.yml).
+**CircleCI pipeline file**: [`.circleci/config.yml`](./.circleci/config.yml).
 
 For more configuration options and details, see the [configuration docs](https://circleci.com/docs/).
 
@@ -133,7 +133,7 @@ Use `git cz` instead of `git commit` to use commitizen.
 
 [![Add and commit with Commitizen](https://github.com/commitizen/cz-cli/raw/master/meta/screenshots/add-commit.png)](https://github.com/commitizen/cz-cli/raw/master/meta/screenshots/add-commit.png)
 
-**Configuration file**: [`.czrc`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.czrc).
+**Configuration file**: [`.czrc`](./.czrc).
 
 ---
 
@@ -141,7 +141,7 @@ Use `git cz` instead of `git commit` to use commitizen.
 
 [commitlint](https://github.com/conventional-changelog/commitlint) checks if your commit messages meet the [conventional commit format](https://conventionalcommits.org).
 
-**Configuration file**: [`.commitlintrc.json`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.commitlintrc.json).
+**Configuration file**: [`.commitlintrc.json`](./.commitlintrc.json).
 
 In general the pattern mostly looks like this:
 
@@ -155,7 +155,7 @@ Are you a good `commitizen` ?
 
 ### Docker Compose
 
-**Compose file**: [`docker-compose.yml`](https://github.com/smarlhens/nest7-boilerplate/blob/master/docker-compose.yml).
+**Compose file**: [`docker-compose.yml`](./docker-compose.yml).
 
 Containers :
 
@@ -170,7 +170,7 @@ Compose file uses `.env`.
 
 [ESLint](https://eslint.org/) is a fully pluggable tool for identifying and reporting on patterns in JavaScript.
 
-**Configuration file**: [`.eslintrc.js`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.eslintrc.js).
+**Configuration file**: [`.eslintrc.js`](./.eslintrc.js).
 
 For more configuration options and details, see the [configuration docs](https://eslint.org/docs/user-guide/configuring).
 
@@ -180,7 +180,7 @@ For more configuration options and details, see the [configuration docs](https:/
 
 [GitHub Actions](https://github.com/features/actions) makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. Make code reviews, branch management, and issue triaging work the way you want.
 
-**CI workflow file**: [`.github/workflows/ci.yml`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.github/workflows/ci.yml).
+**CI workflow file**: [`.github/workflows/ci.yml`](./.github/workflows/ci.yml).
 
 ---
 
@@ -188,7 +188,7 @@ For more configuration options and details, see the [configuration docs](https:/
 
 [Husky](https://github.com/typicode/husky) is a package that helps you create Git hooks easily.
 
-**Configuration folder**: [`.husky`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.husky/).
+**Configuration folder**: [`.husky`](./.husky/).
 
 ---
 
@@ -196,7 +196,7 @@ For more configuration options and details, see the [configuration docs](https:/
 
 [Lint-staged](https://github.com/okonet/lint-staged) is a Node.js script that allows you to run arbitrary scripts against currently staged files.
 
-**Configuration file**: [`.lintstagedrc.json`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.lintstagedrc.json).
+**Configuration file**: [`.lintstagedrc.json`](./.lintstagedrc.json).
 
 ---
 
@@ -204,8 +204,8 @@ For more configuration options and details, see the [configuration docs](https:/
 
 [Prettier](https://prettier.io/) is an opinionated code formatter.
 
-**Configuration file**: [`.prettierrc`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.prettierrc).  
-**Ignore file**: [`.prettierignore`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.prettierignore).
+**Configuration file**: [`.prettierrc`](./.prettierrc).  
+**Ignore file**: [`.prettierignore`](./.prettierignore).
 
 For more configuration options and details, see the [configuration docs](https://prettier.io/docs/en/configuration.html).
 
@@ -215,7 +215,7 @@ For more configuration options and details, see the [configuration docs](https:/
 
 [Travis CI](https://travis-ci.com/) is a hosted continuous integration service used to build and test software projects hosted at GitHub.
 
-**Travis build file**: [`.travis.yml`](https://github.com/smarlhens/nest7-boilerplate/blob/master/.travis.yml).
+**Travis build file**: [`.travis.yml`](./.travis.yml).
 
 For more configuration options and details, see the [configuration docs](https://docs.travis-ci.com/).
 
