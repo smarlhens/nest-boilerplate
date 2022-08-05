@@ -32,7 +32,7 @@
     "@nestjs/config": "2.2.0",
     "@nestjs/core": "9.0.7",
     "@nestjs/platform-express": "9.0.7",
-    "@nestjs/swagger": "6.0.4",
+    "@nestjs/swagger": "6.0.5",
     "@nestjs/typeorm": "9.0.0",
     "joi": "17.6.0",
     "pg": "8.7.3",
