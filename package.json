@@ -39,7 +39,7 @@
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",
     "rxjs": "7.5.6",
-    "typeorm": "0.3.8"
+    "typeorm": "0.3.9"
   },
   "devDependencies": {
     "@commitlint/cli": "17.1.2",
