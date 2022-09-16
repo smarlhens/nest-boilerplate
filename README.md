@@ -318,3 +318,8 @@ To get more help on the Nest CLI use `nest --help` or go check out the [Nest CLI
    ```
 
 ---
+
+
+### Infrastructure model
+
+![Infrastructure model](.infragenie/infrastructure_model.png)
