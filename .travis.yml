@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - '14.21.1'
   - '16.18.1'
-  - '18.12.0'
+  - '18.12.1'
 
 os:
   - linux
