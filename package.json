@@ -37,7 +37,7 @@
     "joi": "17.8.3",
     "pg": "8.9.0",
     "reflect-metadata": "0.1.13",
-    "rimraf": "3.0.2",
+    "rimraf": "4.3.0",
     "rxjs": "7.8.0",
     "typeorm": "0.3.12"
   },
