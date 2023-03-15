@@ -46,7 +46,7 @@ jobs:
     working_directory: ~/nest-boilerplate
     docker:
       - image: cimg/node:14.21-browsers
-      - image: cimg/postgres:14.6
+      - image: cimg/postgres:15.1
         environment:
           POSTGRES_HOST: localhost
           POSTGRES_PORT: 5432
