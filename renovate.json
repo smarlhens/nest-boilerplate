@@ -1,5 +1,12 @@
 {
-  "extends": ["config:base", "schedule:daily", ":automergeMinor"],
+  "extends": [
+    "config:base",
+    "schedule:daily",
+    ":automergeMinor",
+    ":prConcurrentLimitNone",
+    ":prHourlyLimitNone",
+    ":prImmediately"
+  ],
   "labels": ["dependencies"],
   "packageRules": [
     {

@@ -1,4 +1,5 @@
 {
   "{src,apps,libs,test}/**/*.ts": ["eslint --fix"],
-  "./**/*.{ts,js,json,*rc}": ["prettier --write"]
+  "./**/*.{ts,js,json,*rc}": ["prettier --write"],
+  "package.json": ["npx -y sort-package-json"]
 }

@@ -1,9 +1,8 @@
 dist: focal
 language: node_js
 node_js:
-  - '14.21.3'
-  - '16.20.0'
-  - '18.16.0'
+  - '16.14.0'
+  - '18.10.0'
 
 os:
   - linux
