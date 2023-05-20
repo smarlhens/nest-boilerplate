@@ -3,7 +3,7 @@ version: '3.8'
 services:
   postgres:
     container_name: postgres_container
-    image: postgres:15.2-alpine3.17
+    image: postgres:15.3-alpine3.17
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
