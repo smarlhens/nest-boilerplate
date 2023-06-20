@@ -1,7 +1,7 @@
 dist: focal
 language: node_js
 node_js:
-  - '16.14.0'
+  - '16.20.1'
   - '18.10.0'
 
 os:
