@@ -11,14 +11,12 @@
   <a href="https://docs.docker.com/" target="blank"><img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" height="60" alt="Docker logo" /></a>
   <a href="https://github.com/features/actions" target="blank"><img src="https://avatars.githubusercontent.com/u/44036562" height="60" alt="GitHub Actions logo" /></a>
   <a href="https://circleci.com/" target="blank"><img src="https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg" height="60" alt="CircleCI logo" /></a>
-  <a href="https://www.travis-ci.com/" target="blank"><img src="https://www.vectorlogo.zone/logos/travis-ci/travis-ci-icon.svg" height="60" alt="Travis CI logo" /></a>
 </p>
 
 # Nest - Boilerplate
 
 [![GitHub CI](https://github.com/smarlhens/nest-boilerplate/workflows/CI/badge.svg)](https://github.com/smarlhens/nest-boilerplate/actions?query=workflow%3ACI)
 [![CircleCI](https://circleci.com/gh/smarlhens/nest-boilerplate.svg?style=svg)](https://circleci.com/gh/smarlhens/nest-boilerplate)
-[![Build Status](https://travis-ci.com/smarlhens/nest-boilerplate.svg?branch=master)](https://travis-ci.com/smarlhens/nest-boilerplate)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
@@ -38,7 +36,6 @@
   - [Husky](#husky)
   - [Lint-staged](#lint-staged)
   - [Prettier](#prettier)
-  - [Travis CI](#travis-ci)
 - [Running the app](#running-the-app)
 - [Code scaffolding](#code-scaffolding)
 - [Build](#build)
@@ -58,8 +55,7 @@ What things you need to install the software and how to install them :
 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/)
-- [Docker](https://docs.docker.com/docker-for-windows/install/) or [Docker Toolbox](https://github.com/docker/toolbox/releases)
-- [Nest CLI](https://docs.nestjs.com/cli/overview)
+- [Docker](https://docs.docker.com/get-docker/)
 
 ---
 
@@ -200,16 +196,6 @@ For more configuration options and details, see the [configuration docs](https:/
 **Ignore file**: [`.prettierignore`](./.prettierignore).
 
 For more configuration options and details, see the [configuration docs](https://prettier.io/docs/en/configuration.html).
-
----
-
-### Travis CI
-
-[Travis CI](https://travis-ci.com/) is a hosted continuous integration service used to build and test software projects hosted at GitHub.
-
-**Travis build file**: [`.travis.yml`](./.travis.yml).
-
-For more configuration options and details, see the [configuration docs](https://docs.travis-ci.com/).
 
 ---
 
