@@ -21,5 +21,6 @@
       "matchDepTypes": ["optionalDependencies"],
       "addLabels": ["optional"]
     }
-  ]
+  ],
+  "ignorePaths": [".circleci/config.yml"]
 }
