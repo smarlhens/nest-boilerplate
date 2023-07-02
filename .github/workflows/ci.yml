@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: ['16.14.0', '18.10.0']
+        node: ['16.14.0', '18.10.0', '20.0.0']
 
     steps:
       - name: Checkout source code
