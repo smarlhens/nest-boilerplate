@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.6",
-    "@commitlint/config-conventional": "17.6.6",
+    "@commitlint/config-conventional": "17.6.7",
     "@nestjs/cli": "10.1.9",
     "@nestjs/schematics": "10.0.1",
     "@nestjs/testing": "10.1.0",
