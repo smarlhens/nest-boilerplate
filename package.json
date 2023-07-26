@@ -50,7 +50,7 @@
     "@types/jest": "29.5.3",
     "@types/node": "20.4.5",
     "@types/supertest": "2.0.12",
-    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "@typescript-eslint/eslint-plugin": "6.2.0",
     "@typescript-eslint/parser": "5.62.0",
     "commitizen": "4.3.0",
     "cz-conventional-changelog": "3.3.0",
