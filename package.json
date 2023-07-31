@@ -27,7 +27,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@nestjs/common": "10.1.2",
+    "@nestjs/common": "10.1.3",
     "@nestjs/config": "3.0.0",
     "@nestjs/core": "10.1.2",
     "@nestjs/platform-express": "10.1.2",
