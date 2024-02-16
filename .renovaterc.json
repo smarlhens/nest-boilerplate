@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "config:base",
+    "schedule:daily",
+    "group:all",
+    ":prConcurrentLimitNone",
+    ":prHourlyLimitNone",
+    ":prImmediately"
+  ],
+  "labels": ["dependencies"],
+  "ignorePaths": [".circleci/config.yml"]
+}
