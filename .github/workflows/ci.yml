@@ -40,7 +40,7 @@ jobs:
       - name: Copy .env
         run: cp .env.dist .env
       - name: Build the docker-compose stack
-        run: docker-compose up -d --build postgres
+        run: docker compose up -d --build postgres
       - name: Check running containers
         run: docker ps -a
       - name: E2E
