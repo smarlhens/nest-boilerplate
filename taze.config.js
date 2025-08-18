@@ -11,5 +11,6 @@ export default defineConfig({
     typescript: 'ignore', // todo: bump with eslint
     eslint: 'minor', // TODO: migrate config
     '@nestjs/*': 'minor', // breaking changes
+    '@typescript-eslint/*': 'minor', // TODO: migrate alongside eslint
   },
 });
