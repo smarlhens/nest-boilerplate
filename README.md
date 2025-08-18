@@ -147,8 +147,8 @@ Are you a good `commitizen` ?
 
 Containers :
 
-- PostgreSQL 14
-- pgAdmin 6
+- PostgreSQL 16
+- pgAdmin 8
 
 Compose file uses `.env`.
 
