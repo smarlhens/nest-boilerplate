@@ -1,6 +1,7 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:recommended",
     "schedule:daily",
     "group:all",
     ":prConcurrentLimitNone",
@@ -8,5 +9,13 @@
     ":prImmediately"
   ],
   "labels": ["dependencies"],
-  "ignorePaths": [".circleci/config.yml"]
+  "packageRules": [
+    {
+      "enabled": false,
+      "groupName": "nodejs",
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@types/node"],
+      "matchUpdateTypes": ["major"]
+    }
+  ]
 }
