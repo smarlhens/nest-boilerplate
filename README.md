@@ -28,7 +28,6 @@
   - [Installation](#installation)
 - [What's in the box ?](#whats-in-the-box-)
   - [CircleCI](#circleci)
-  - [Commitizen](#commitizen)
   - [Commitlint](#commitlint)
   - [Docker Compose](#docker-compose)
   - [ESLint](#eslint)
@@ -110,18 +109,6 @@ What things you need to install the software and how to install them :
 **CircleCI pipeline file**: [`.circleci/config.yml`](./.circleci/config.yml).
 
 For more configuration options and details, see the [configuration docs](https://circleci.com/docs/).
-
----
-
-### Commitizen
-
-[commitizen](https://github.com/commitizen/cz-cli) is a command line utility that makes it easier to create commit messages following the [conventional commit format](https://conventionalcommits.org) specification.
-
-Use `git cz` instead of `git commit` to use commitizen.
-
-[![Add and commit with Commitizen](https://github.com/commitizen/cz-cli/raw/master/meta/screenshots/add-commit.png)](https://github.com/commitizen/cz-cli/raw/master/meta/screenshots/add-commit.png)
-
-**Configuration file**: [`.czrc`](./.czrc).
 
 ---
 
