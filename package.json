@@ -32,7 +32,7 @@
     "@nestjs/platform-express": "10.4.20",
     "@nestjs/swagger": "7.4.2",
     "@nestjs/typeorm": "10.0.2",
-    "joi": "18.0.0",
+    "joi": "18.2.5",
     "pg": "8.16.3",
     "reflect-metadata": "0.2.2",
     "rimraf": "5.0.10",
